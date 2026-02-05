@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box  ;
+        }
+        .container {
+            text-align: center;
+            display: grid;
+            flex-wrap: wrap;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        div>div {
+            margin: 5px;
+            height: 200px;
+            font-size: 30px;
+        }
+
+        #gradient1 {
+            color: aliceblue;
+            background-image: linear-gradient(to top, pink, purple);
+        }
+
+        #gradient2 {
+
+            color: aliceblue;
+            background-image: linear-gradient(to bottom, pink, purple);
+        }
+
+        #gradient3 {
+
+            color: aliceblue;
+            background-image: linear-gradient(to left, pink, purple);
+        }
+
+        #gradient4 {
+
+            background-image: linear-gradient(to right, pink, purple);
+            color: aliceblue;
+        }
+
+        #gradient5 {
+
+            background-image: linear-gradient(to bottom right, pink, purple);
+            color: aliceblue;
+        }
+
+        #rainbow {
+
+            background-image: linear-gradient(to top left, violet, indigo, blue, green, yellow, orange, red);
+            color: aliceblue;
+        }
+
+        #transparacy {
+            background-image: linear-gradient(to right, rgba(0, 0, 225, 0), rgba(0, 0, 225, 1));
+            color: aliceblue;
+        }
+
+        #radial1 {
+            background-image: radial-gradient(orange, pink, purple);
+            color: aliceblue;
+        }
+
+        #radial2 {
+            background-image: radial-gradient(circle, purple, pink, orange);
+            color: aliceblue;
+        }
+
+        #con1 {
+            background-image: conic-gradient(red, yellow, blue);
+            color: aliceblue;
+        }
+
+        #con2 {
+            background-image: conic-gradient(yellow, purple, green);
+            border-radius: 50%;
+        }
+
+        #con3 {
+            background-image: conic-gradient(seagreen 0deg 90deg, orange 90deg 180deg, brown 180deg 270deg, cyan 270deg 360deg);
+            border-radius: 50%;
+        }
+        /* @media screen and (max-width:800px){
+            .container{
+                flex:50%;
+                max-width: 50%;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <h2>Gradient Examples</h2><br>
+    <div class="container">
+        <!-- LINAR GRADIENTS -->
+        <div id="gradient1">To top</div>
+
+        <div id="gradient2">To bottom</div>
+
+        <div id="gradient3">To left</div>
+
+        <div id="gradient4">To right</div>
+
+        <div id="gradient5">To diagonal</div>
+
+        <div id="rainbow">Rainbow</div>
+
+        <div id="transparacy">Transparacy</div>
+
+        <!-- RADICAL GRADIENTS -->
+
+        <div id="radial1"> Radial Gradient</div>
+
+        <div id="radial2"> Radial Gradient</div>
+
+        <!-- CONICAL GRADIENTS -->
+
+        <div id="con1" style="height: 200px;
+            width: 200px">Conial Gradient</div>
+
+        <div id="con2" style="height: 200px;
+            width: 200px">Conical Gradient</div>
+
+        <div id="con3" style="height: 200px;
+            width: 200px">Conical Gradient</div>
+
+        <div id="con4" style="height: 200px;
+            width: 200px;background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+            border-radius: 50%;"></div>
+    </div>
+</body>
+
+</html>

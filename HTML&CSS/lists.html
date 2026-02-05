@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ullist{
+            padding: 20px;
+            margin:50px;
+            width:200px;
+            background-color: beige;
+            border: 2px solid black;
+            border-radius: 12px;
+            list-style-position: outside;
+        }
+        a{
+            position: relative;
+            color: black;
+        }
+        a::after{
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            background: black;
+            bottom: 0;
+            left: 0;
+            transition: 0.3s;
+        }
+        a:hover::after{
+            width: 100px;
+        }
+        a:focus{
+            outline: none;
+        }
+        a.btn{
+            display: inline-block;
+            padding: 10px 20px;
+            background: green;
+            color: aliceblue;
+            border-radius: 12px;
+
+        }
+        a.btn:hover{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <ul class="ullist">
+        <li>CSS</li>
+        <li>JAVA</li>
+        <li>Python</li>
+        <li>C#</li>
+    </ul>
+
+
+    <a href="#" class="btn" > Submit</a>
+</body>
+</html>

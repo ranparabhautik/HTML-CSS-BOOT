@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div > p{
+             color: rgb(6, 30, 239);
+             background-color: white;
+        }
+        div > div{
+            border-radius: 10px;
+            border: 8px solid brown;
+            width: 120px;
+            height: 100px;
+            margin :10px;
+        }
+        div + p {
+            background-color: orangered;
+            font-size: larger;
+        }
+
+        div~p{
+            font-size: 30px;
+        }
+        p::first-letter{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: springgreen;
+            font-size: x-small;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;color:aqua">
+    <p>The main paragraph outside DIV</p>
+
+    <div>
+        <p>This is para inside P</p>
+        <p>This is para inside P</p>
+        <p>This is para inside P</p>
+        <div class="redbox"> </div>
+        <div class="greenbox"> </div>
+        <div class="blueredbox"> </div>
+        <div class="blackbox"> </div>
+
+    </div>
+
+    <p>The paragraph next to div tag!!!!!!!!!! <mark> after DIVV</mark></p>
+
+    <p>The main paragraph outside DIV <mark>after DIV</mark></p>
+
+    <p>The main paragraph outside DIV <mark>after DIVV</mark></p>
+
+</body>
+
+</html>

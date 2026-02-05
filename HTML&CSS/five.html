@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1:hover {
+            background-color: aquamarine;
+            padding: 20px;
+            margin: auto;
+            border: 2px solid blue;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        input:focus {
+            background-color: yellow;
+            color: black;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: larger;
+            box-sizing: border-box;
+            border: 3px dashed black;
+        }
+
+        body {
+            background-image: url(../HTML_PRACTICE/ring.gif);
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size:inherit;
+            background-attachment:fixed;
+        }
+    </style>
+</head>
+
+<body>
+     <div id="textt">
+            
+        </div>
+    <script>
+        let i = 0
+        for (i; i < 100; i++) {
+            document.getElementById("textt").innerHTML += "hello WOrldd <br>";
+        }
+    </script>
+
+    <br>
+    <input type="text">
+  
+       
+    
+</body>
+
+</html>

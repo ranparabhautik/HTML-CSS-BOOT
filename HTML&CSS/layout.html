@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* padding: 10px; */
+            background-color: cornflowerblue;
+        }
+
+        ul.nav {
+            display: flex;
+            background-color: aquamarine;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        ul.nav li a {
+            display: block;
+            color: chocolate;
+            padding: 10px 10px;
+            text-decoration: none;
+
+        }
+
+        ul li a:hover {
+            background-color: gray;
+            color: black;
+        }
+
+        div.container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        div.container>div {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .fix {
+            border: 2px solid green;
+            border-radius: 10px;
+            right: 10px;
+            bottom: 0;
+            position: fixed;
+            height: 200px;
+            width: 200px;
+        }
+
+        .relative {
+            /* margin-left: 300px; */
+
+            padding: 5px;
+            height: 400px;
+            /* display: flex; */
+            /* justify-content: center; */
+            width: 550px;
+            /* margin-left: auto;
+            margin-right: auto; */
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border: 3px solid red;
+        }
+
+        .absolute {
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+            border: 3px dashed blue;
+        }
+
+
+        .ovrflw-v {
+            background-color: darkgrey;
+            height: 150px;
+            width: 300px;
+            border: 4px solid yellow;
+            overflow: visible;
+        }
+
+        .ovrflw-h {
+            background-color: darkgrey;
+            height: 150px;
+            margin-top: 70px;
+            width: 300px;
+            border: 4px solid yellow;
+            overflow: hidden;
+        }
+
+        @media screen and (max-width:1000px) {
+            div.container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Header of page</h2>
+
+    </header>
+
+    <ul class="nav">
+        <li><a href="">Home</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">About us</a></li>
+        <li><a href="">Menu</a></li>
+        <li><a href="">Items</a></li>
+
+    </ul>
+    <div class="container">
+        <div>
+            <h2>Info</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, voluptatem, odit recusandae nesciunt cum
+                ut sequi quam deleniti quo error consectetur aliquam voluptate accusantium, modi exercitationem
+                repudiandae quos impedit mollitia?</p>
+        </div>
+        <div>
+            <h2>Main Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut esse temporibus quo praesentium ipsum
+                molestias voluptate totam facilis, repellendus, placeat numquam! Molestias consequatur inventore eaque
+                repudiandae ut est iste voluptate!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa beatae autem inventore, alias in,
+                reprehenderit cupiditate tenetur fugiat ratione unde veritatis. Inventore fuga quo sapiente doloremque
+                nulla ullam modi debitis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ad odit hic quam corporis saepe vero
+                voluptatibus eaque nobis ipsam? Officia odit minus nostrum adipisci, est natus vitae sunt hic.</p>
+        </div>
+        <div>
+            <h2>Info</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat dicta facilis voluptas minus, eum a
+                officiis ab fuga maiores, laudantium velit amet mollitia et repudiandae tenetur pariatur itaque.
+                Asperiores, quod.</p>
+        </div>
+        <div class="fix">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quisquam accusamus placeat ad aut saepe
+                quam quo ipsa velit.
+            </p>
+        </div>
+
+    </div>
+
+    <div style="display: flex;justify-content: center;align-items: center;">
+         <div class="relative">
+        <p>Position= relative, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi ab laboriosam
+            eaque
+            laborum</p>
+        <div class="absolute">
+            <p>Position= absolute</p>
+        </div>
+    </div>
+    </div>
+   
+
+
+    <div class="ovrflw-v">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur excepturi, amet ut molestias, nisi
+            aliquid fuga ipsum repudiandae ducimus odio magnam sit. In repudiandae, neque pariatur ullam eos minus cum
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quasi consequuntur debitis amet, hic
+            dolorum deleniti eligendi numquam explicabo voluptatibus, molestiae ullam quos at eveniet natus?
+            Reprehenderit, asperiores tenetur. Amet </p>
+
+    </div>
+
+
+    <div class="ovrflw-h">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur excepturi, amet ut molestias, nisi
+            aliquid fuga ipsum repudiandae ducimus odio magnam sit. In repudiandae, neque pariatur ullam eos minus cum
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quasi consequuntur debitis amet, hic
+            dolorum deleniti eligendi numquam explicabo voluptatibus, molestiae ullam quos at eveniet natus?
+            Reprehenderit, asperiores tenetur. Amet </p>
+    </div>
+
+
+
+
+</body>
+
+</html>
