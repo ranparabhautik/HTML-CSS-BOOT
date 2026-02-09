@@ -15,35 +15,35 @@
 
         <div class="header">
             <div class="left-header">
-                <div><img src="./Flipkart.jpg" alt=""></div>
-                <div class="search-bar"><input type="text" placeholder="Search for products, brands and more"><img
-                        src="search-icon.png" height="10px" width="10px" alt=""></div>
+                <div><img src="./Flipkart.jpg" height="40rem" width="120rem" alt=""></div>
+                <div class="search-bar"><input type="text" placeholder="Search for products, brands and more"><a href=""><img
+                        src="search-icon.png" height="35px" width="25px" alt="" ></a></div>
             </div>
             <div class="right-header">
                 <div><button>Login</button></div>
-                <div><select name="" id="">
+                <div><select name="" id="" class="selec">
                         <option value="">Item1</option>
                         <option value="">Item2</option>
                         <option value="">Item3</option>
                     </select></div>
-                <div><img src="" alt="">cart</div>
+                <div><img src="./images/cart.png" height="20px" width="20px" alt="">cart</div>
             </div>
         </div>
 
         <div class="item-menu">
-            <div>
+            <div class="items">
                 <img src="./images/top-offers.jpg" alt="">
                 <p>Top Offers.</p>
             </div>
-            <div>
+            <div class="items">
                 <img src="./images/./grocery.jpg" alt="">
                 <p>Grocery</p>
             </div>
-            <div>
+            <div class="items">
                 <img src="./images/mobiles.webp" alt="">
                 <p>Mobiles</p>
             </div>
-            <div>
+            <div class="items">
                 <img src="./images/fashion.jpg" alt="">
                 <p><select name="" id="">
 
@@ -53,7 +53,7 @@
                     </select>
                 </p>
             </div>
-            <div>
+            <div class="items">
                 <img src="./images/electronics.webp" alt="">
                 <p><select name="" id="">
                         <option value="">Electronics</option>
@@ -62,7 +62,7 @@
                     </select>
                 </p>
             </div>
-            <div>
+            <div class="items">
                 <img src="./images/home.avif" alt="">
                 <p><select name="" id="">
                         <option value="">Home</option>
@@ -71,7 +71,7 @@
                     </select>
                 </p>
             </div>
-            <div>
+            <div class="items">
                 <img src="./images/appliance.jpg" alt="">
                 <p><select name="" id="">
                         <option value="">Appliance</option>
@@ -80,7 +80,7 @@
                     </select>
                 </p>
             </div>
-            <div>
+            <div class="items">
                 <img src="./images/travel.png" alt="">
                 <p><select name="" id="">
                         <option value="">Travel</option>
@@ -89,7 +89,7 @@
                     </select>
                 </p>
             </div>
-            <div>
+            <div class="items">
                 <img src="./images/toys.avif" alt="">
                 <p><select name="" id="">
                         <option value="">Beauty,Toys&More</option>
@@ -101,66 +101,134 @@
         </div>
 
 
-        <div class="products">
-            <div class="p-head">
-                <div class="left-p-head">
-                    <h3>Deals of the Day</h3>
-                    <img src="./images/clock.png" width="30px" height="30px" alt="">
-                    <p>22:07:36 left</p>
+        <div class="products-main">
+            <div class="products">
+                <div class="p-head">
+                    <div class="left-p-head">
+                        <h3>Deals of the Day</h3>
+                        <img src="./images/clock.png" width="30px" height="30px" alt="">
+                        <p>22:07:36 left</p>
+                    </div>
+                    <div class="right-p-head">
+                        <Button>View All</Button>
+                    </div>
                 </div>
-                <div class="right-p-head">
-                    <Button>View All</Button>
+                <hr>
+                <div class="p-body">
+                    <div class="p-item">
+                        <a href="">
+                            <img src="./images/wrist-watch.webp" alt=""></a>
+                        <p><b>Casio, Fastrack, Sonata..</b></p>
+                        <p style="color: green;">Upt0 80% off</p>
+                        <p>Knockout sales</p>
+                    </div>
+                    <div class="p-item">
+                        <a href="">
+                            <img src="./images//home-temple.jpg" alt=""></a>
+                        <p><b>Home, Temple & More</b></p>
+                        <p style="color: green;">Extra 10% off</p>
+                        <p>Space Saving furniture </p>
+                    </div>
+                    <div class="p-item">
+                        <a href="">
+                            <img src="./images/tablet-case.webp" alt=""></a>
+                        <p><b>Premium Tablet Cases</b></p>
+                        <p style="color: green;"> Extra 10% off</p>
+                        <p> For all top model</p>
+                    </div>
+                    <div class="p-item">
+                        <a href="">
+                            <img src="./images/home-decor.webp" alt=""></a>
+                        <p><b>Best of Home decor </b></p>
+                        <p style="color: green;">From $79</p>
+                        <p>Lowest ever</p>
+                    </div>
+                    <div class="p-item">
+                        <a href="">
+                            <img src="./images/appliance.jpg" alt=""></a>
+                        <p><b>Metronaut & Provogue</b></p>
+                        <p style="color: green;">From $249 & extra 10% off</p>
+                        <p>Jacket, Dresses & More</p>
+                    </div>
+                    <div class="p-item">
+                        <a href="">
+                            <img src="./images/mobiles.webp" alt=""></a>
+                        <p><b>Lava A 1500</b></p>
+                        <p style="color: green;">Flat $830 off</p>
+                        <p>Now $999</p>
+                    </div>
+                    <div class="p-item">
+                        <a href="">
+                            <img src="./images/mobiles.webp" alt=""></a>
+                        <p><b>Lava A 1500</b></p>
+                        <p style="color: green;">Flat $830 off</p>
+                        <p>Now $999</p>
+                    </div>
                 </div>
-            </div><hr>
-            <div class="p-body">
-                <div class="p-item">
-                    <img src="./images/wrist-watch.webp" alt="">
-                    <p></p>
-                    <p></p>
-                    <p></p>
+            </div>
+            <div class="banner">
+                <img src="./images/banner.png" alt="">
+            </div>
+        </div>
+
+        <div class="products-main">
+            <div class="products-books">
+                <div class="p-head">
+                    <div class="left-p-head">
+                        <h3>Books and Music Instrument</h3>
+                        <!-- <img src="./images/clock.png" width="30px" height="30px" alt=""> -->
+                        <!-- <p>22:07:36 left</p> -->
+                    </div>
+                    <div class="right-p-head">
+                        <Button>View All</Button>
+                    </div>
                 </div>
-                <div class="p-item">
-                    <img src="./images//home-temple.jpg" alt="">
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div class="p-item">
-                    <img src="./images/tablet-case.webp" alt="">
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div class="p-item">
-                    <img src="./images/home-decor.webp" alt="">
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div class="p-item">
-                    <img src="./images/appliance.jpg" alt="">
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div class="p-item">
-                    <img src="./images/mobiles.webp" alt="">
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div class="p-item">
-                    <img src="./images/mobiles.webp" alt="">
-                    <p></p>
-                    <p></p>
-                    <p></p>
+                <hr>
+                <div class="p-body" style="justify-content: flex-start; gap: 3rem;">
+                    <div class="p-item">
+                        <a href="">
+                            <img src="./images/harmonium.webp" alt=""></a>
+                        <p><b>Harmonium</b></p>
+                        <p style="color: green;">Upto 80% off</p>
+                        <p>Shop Now</p>
+                    </div>
+                    <div class="p-item">
+                        <a href="">
+                            <img src="./images/flute.avif" alt=""></a>
+                        <p><b>Flute</b></p>
+                        <p style="color: green;">Upto 60% off</p>
+                        <p>Shop Now</p>
+                    </div>
+                    <div class="p-item">
+                        <a href="">
+                            <img src="./images/guitar-2.avif" alt=""></a>
+                        <p><b>Acoustic Guitar</b></p>
+                        <p style="color: green;">Just at $1799</p>
+                        <p> By Cord</p>
+                    </div>
+                    <div class="p-item">
+                        <a href="">
+                            <img src="./images/musical-accessory.avif" alt=""></a>
+                        <p><b>Musical Accesories </b></p>
+                        <p style="color: green;">Upto 80% off</p>
+                        <p>Shop Now</p>
+                    </div>
+                    <div class="p-item">
+                        <a href="">
+                            <img src="./images/microphone-accessory.avif" alt=""></a>
+                        <p><b>Microphone Accesories</b></p>
+                        <p style="color: green;">Uoto 80% off</p>
+                        <p>By Revel</p>
+                    </div>
+
                 </div>
             </div>
         </div>
 
-        
 
-
+        <footer>
+            T&C apply
+        </footer>
 
 
 
