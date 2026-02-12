@@ -249,18 +249,150 @@
 
 // closure demo
 
-function outest() {
-        var y = 4742
-    function outer(x) {
-        var a = 100;
-        function inner() {
-            console.log(a,b,y,x)
-        }
-        return inner;
-    }
-    return outer;
-}
-b=12112
-outest()("Helloo")()
-// console.log(outer()) 
+// function outest() {
+//         var y = 4742
+//     function outer(x) {
+//         var a = 100;
+//         function inner() {
+//             console.log(a,b,y,x)
+//         }
+//         return inner;
+//     }
+//     return outer;
+// }
+// b=12112
+// outest()("Helloo")()
+// // console.log(outer()) 
 
+// --------------------------------------------------------------------------------------------------------------
+
+
+
+// function count() {
+//     let count = 0;
+
+//     document.getElementById("clickme").addEventListener('mouseover', function abc() {
+//         console.log("Button Clicked", ++count);
+//     });
+// }
+// count();
+
+
+
+
+
+// console.log("Start")
+
+// document.getElementById("clickme").addEventListener("click", function button_click_callback(){
+//     console.log("Button Clicked just Now ");
+// });
+
+// console.log("End")
+
+
+
+
+
+
+
+
+
+// console.log("Start")
+
+// setTimeout(function cbT(){
+//     console.log("Call back set time out.")
+// },6000)
+
+// fetch("https://api.data.gov/").then(function cbN(){
+//     console.log("Netflix API called")
+// })
+
+// console.log("End")
+
+
+
+
+
+
+// -----------------------------------------------------------------Simulating main thread delay-------------------------------------------
+
+// console.log("Start")
+// setTimeout(function ab(){
+//     console.log("Hello World after 5 sec.")
+// },5000);
+// console.log("End")
+
+// let startdate = new Date().getTime()
+// let enddate = startdate;
+// while(enddate < startdate + 1e4){
+//     enddate = new Date().getTime()
+// }
+// console.log("After 10000 ms")
+
+
+
+
+
+
+
+
+
+
+// another way to use settimeout
+
+// console.log("Start")
+// function cb(){
+//     console.log("CB function")
+// }
+// setTimeout(cb,2500);
+// console.log("End")
+
+
+
+
+
+
+
+
+// calculating the radius using high order function.===> higher order functions are the functions which are passed as argument in another function
+
+const radius = [10,5,6,3];
+// const area = function (radius){
+//     const output = [];
+//     for(let i=0;i<4;i++)
+//     {
+//         output.push(Math.PI * radius[i] * radius[i])
+//     }
+//     return output;
+// }
+
+// const result = area(radius)
+// console.log(result)
+// console.log(result[2]);
+// console.log(area(radius));
+
+
+const area = function(radius){
+    return Math.PI*radius*radius;
+}
+
+const circum = function(radius){
+    return Math.PI*2*radius
+}
+
+const diameter = function(radius){
+    return 2*radius;
+}
+
+const calculate = function(radius,logic){
+    const output = [];
+    for(let i=0;i<radius.length;i++){
+        output.push(logic(radius[i]));
+    }
+    return output;
+}
+
+
+console.log(calculate(radius,area));    
+console.log(calculate(radius,circum));    
+console.log(calculate(radius,diameter));

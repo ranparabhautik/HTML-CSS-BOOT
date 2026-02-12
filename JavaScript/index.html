@@ -1,13 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
 </head>
+
 <body>
-    <script src="Hello.js"></script>
     <h2>Helloo Worldd!</h2>
+    <hr>
+    <p>to change html content</p>
+    <button onclick="changeinfo()">Click Here</button>
+    <h3 id="clickme">Some random text</h3>
+    <hr>
+
+
+    <p>to change html attributes</p>
+    <img id="myimage" src="./leftarrow.webp" width="200px" height="150px" alt="">
+    <button onclick="toleft()">Left </button>
+    <button onclick="toright()">Right</button>
+    <hr>
+
+
+    <p>to change the css of the html element</p>
+    <h2 id="text1">This is some random text to test JavaScript.</h2>
+    <button onclick="changecss()">Click Here</button>
+    <hr>
+
+    <p id="text2">Using document.write</p>
+    <button onclick="document.write('Usind document.write() vanishes all html'),window.alert('vanishes HTML')">Click</button>
+    <hr>
+
+
+    <!-- <p>Using Alert</p>
+    <script>
+        alert("Hello From Bhautik using alert")
+    </script>
+    <hr> -->
+
+    <p id="text3"></p>
+    <script>
+        document.getElementById("text3").innerHTML = (100*20-5)/20;
+    </script>
+    <hr>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="new.js"></script>
+    <!-- <script src="Hello.js"></script> -->
+
 </body>
+
 </html>
