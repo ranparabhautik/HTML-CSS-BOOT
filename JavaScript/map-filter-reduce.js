@@ -100,10 +100,10 @@ console.log(res4)
 // using map performing a real life example
 
 const data = [
-    {fname:"Bhautik",lname:"Ranpara"},
-    {fname:"Loy",lname:"Doe"},
-    {fname:"Sam",lname:"Roy"},
-    {fname:"John",lname:"Sam"}
+    {fname:"Bhautik",lname:"Ranpara",age:23},
+    {fname:"Loy",lname:"Doe",age:62},
+    {fname:"Sam",lname:"Roy",age:45},
+    {fname:"John",lname:"Sam",age:23}
 ];
 
 
@@ -114,3 +114,41 @@ const userlist = data.map((x)=>{
 console.log(userlist)
 
 
+const agelist = data.reduce(function(acc,curr){
+    if(acc[curr.age]){
+        acc[curr.age] = ++acc[curr.age];
+    }
+    else{
+        acc[curr.age]=1;
+    }
+    return acc;
+},{})
+console.log(agelist)
+
+
+
+
+
+
+
+// Chaining map and filter.// Finding the fname of the person whose age is less than 30.
+
+
+const agelt30 = data.filter(function(x){
+    return x.age<30
+}).map((x)=>x.fname)
+console.log(agelt30)
+
+// const agelt30 = data.filter((x)=> x.age<30).map((x)=>x.fname)
+// console.log(agelt30)
+
+
+
+
+const res5 = data.reduce(function(acc,curr){
+    if(curr.age < 30){
+       acc.push(curr.fname)
+    }
+    return acc;
+},[])
+console.log(res5)
