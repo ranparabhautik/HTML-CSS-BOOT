@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+        }
+        .grandparent{
+            height: 30rem;
+            width: 30rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: red;
+        }
+          .parent{
+            height: 20rem;
+            width: 20rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: green;
+        }
+          .child{
+            height: 10rem;
+            width: 10rem;
+            justify-content: center;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="grandparent">
+        <div class="parent">
+            <div class="child">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="eventlisteners.js"></script>
+</body>
+</html>
