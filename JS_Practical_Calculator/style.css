@@ -29,3 +29,6 @@ body.dark-mode .border {
     background-color: #0067C0;
     color: white;
 }
+button:hover{
+    background-color: #444;
+}
