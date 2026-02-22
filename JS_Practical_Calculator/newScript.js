@@ -99,7 +99,7 @@ document.addEventListener("click", function (e) {
 
         case "=":
             try {
-                let result = eval(expression);
+                let result = new Function('return ' + expression)();
                 updateResult(result);
                 addToHistory(expression, result)
                 expression = result.toString();
