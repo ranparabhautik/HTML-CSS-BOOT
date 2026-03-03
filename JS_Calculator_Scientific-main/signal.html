@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: bisque;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 300px;
+            width: 100px;
+            padding: 20px;
+            border-radius: 50px;
+            background-color: black;
+
+        }
+
+        .circle {
+            position: relative;
+            height: 50px;
+            width: 50px;
+            border-radius: 100%;
+            background-color: gray;
+        }
+
+        .circle:nth-child(1).active {
+            background-color: red;
+            box-shadow: 0 0 60px 10px red;
+        }
+
+        .circle:nth-child(2).active {
+            background-color: yellow;
+            box-shadow: 0 0 60px 10px yellow;
+        }
+
+        .circle:nth-child(3).active {
+            background-color: green;
+            box-shadow: 0 0 60px 10px green;
+        }
+
+        button {
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- <iframe src="https://www.w3schools.com" height="300px" width="300px" frameborder="0"></iframe>
+    <a href="https://example.com">
+        <button>Click Me</button>
+    </a>
+
+    <button type="submit"><img src="panda.png" height="20px" width="20px"></button> -->
+
+    <div class="container">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <div>
+        <button id="pause">Pause</button>
+        <button id="start">Start</button>
+    </div>
+
+    <!-- <form action=""> 
+
+    <input type="text" name="" id="">
+
+</form> -->
+
+
+
+    <script src="signal.js"></script>
+</body>
+
+</html>
