@@ -1,11 +1,17 @@
 body {
     font-family: Arial, sans-serif;
+<<<<<<< HEAD
     background: #f9fdf9; 
+=======
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+>>>>>>> 987c3c5ffe5e88bc8406ee0965fcdc06a45d4141
     margin: 0;
     padding: 20px;
 }
 
 #table-data {
+<<<<<<< HEAD
     background: rgba(245, 250, 245, 0.95); 
     color: #2d2d2d; 
     border-radius: 10px;
@@ -17,19 +23,41 @@ body {
 #table-data thead {
     background: linear-gradient(90deg, #fce38a, #81ecec, #74b9ff, #55efc4); 
     color: #2d2d2d;
+=======
+    background: rgba(10, 15, 60, 0.95);
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0 8px 25px rgba(0, 212, 255, 0.25);
+}
+
+#table-data thead {
+    background: linear-gradient(90deg, #091979, #00d4ff);
+    color: #ffffff;
+>>>>>>> 987c3c5ffe5e88bc8406ee0965fcdc06a45d4141
     font-weight: 600;
 }
 
 #table-data thead td {
+<<<<<<< HEAD
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 #table-data tbody tr {
     background-color: #f0f9f0; 
+=======
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+#table-data tbody tr {
+    background-color: #0a0f3d;
+>>>>>>> 987c3c5ffe5e88bc8406ee0965fcdc06a45d4141
     transition: all 0.3s ease;
 }
 
 #table-data tbody tr:nth-child(even) {
+<<<<<<< HEAD
     background-color: #e0f7f2; 
 }
 
@@ -64,4 +92,15 @@ nav{
 
 .custom-alert.show {
   opacity: 1;
+=======
+    background-color: #11186a;
+}
+
+#table-data tbody tr:hover {
+    background-color: rgba(0, 212, 255, 0.2);
+}
+
+#table-data td {
+    border-color: rgba(255, 255, 255, 0.15);
+>>>>>>> 987c3c5ffe5e88bc8406ee0965fcdc06a45d4141
 }

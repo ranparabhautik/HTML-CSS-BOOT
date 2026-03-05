@@ -1,12 +1,30 @@
+<<<<<<< HEAD
 let editingProductId = null;
+=======
+// ============================================
+// GLOBAL VARIABLE (Used for Edit Mode)
+// ============================================
+let editingProductId = null;
+
+
+// ============================================
+// GET PRODUCTS FROM LOCALSTORAGE
+// ============================================
+>>>>>>> 987c3c5ffe5e88bc8406ee0965fcdc06a45d4141
 function getProducts() {
   return JSON.parse(localStorage.getItem("Products")) || [];
 }
 
 
+<<<<<<< HEAD
 // 
 // RENDERING PRODUCTS IN TABLE
 // 
+=======
+// ============================================
+// RENDERING PRODUCTS IN TABLE
+// ============================================
+>>>>>>> 987c3c5ffe5e88bc8406ee0965fcdc06a45d4141
 function renderProducts() {
   const tableBody = document.querySelector("#table-data tbody");
   tableBody.innerHTML = "";
@@ -39,9 +57,15 @@ function renderProducts() {
 renderProducts();
 
 
+<<<<<<< HEAD
 // 
 // EDITING PRODUCT OPENING MODAL WITH DATA FILLED IN IT
 // 
+=======
+// ============================================
+// EDITING PRODUCT (OPEN MODAL WITH DATA)
+// ============================================
+>>>>>>> 987c3c5ffe5e88bc8406ee0965fcdc06a45d4141
 document
   .querySelector("#table-data tbody")
   .addEventListener("click", function (e) {
@@ -71,6 +95,7 @@ document
   });
 
 
+<<<<<<< HEAD
 // 
 // ADDING + UPDATING PRODUCT
 // 
@@ -163,6 +188,11 @@ document
 
 
 
+=======
+// ============================================
+// ADDING + UPDATING PRODUCT
+// ============================================
+>>>>>>> 987c3c5ffe5e88bc8406ee0965fcdc06a45d4141
 document.querySelector("#saveProduct").addEventListener("click", function () {
 
   const name = document.querySelector("#product-name").value;
@@ -171,6 +201,7 @@ document.querySelector("#saveProduct").addEventListener("click", function () {
   const description = document.querySelector("#product-description").value;
 
   if (!name || !price || !description || !imageUrl) {
+<<<<<<< HEAD
     showAlert("Please fill all fields", "error");
     return;
   }
@@ -190,6 +221,9 @@ document.querySelector("#saveProduct").addEventListener("click", function () {
 
   if (!isValid) {
     showAlert("Enter Valid URL");
+=======
+    alert("Please fill all fields");
+>>>>>>> 987c3c5ffe5e88bc8406ee0965fcdc06a45d4141
     return;
   }
 
@@ -197,7 +231,11 @@ document.querySelector("#saveProduct").addEventListener("click", function () {
 
   if (editingProductId !== null) {
 
+<<<<<<< HEAD
     // ---------- CONFIRMATION ----------
+=======
+    // ---------- CONFIRM BEFORE UPDATE ----------
+>>>>>>> 987c3c5ffe5e88bc8406ee0965fcdc06a45d4141
     const confirmUpdate = confirm("Are you sure you want to update this product?");
     if (!confirmUpdate) return;
 
@@ -211,13 +249,20 @@ document.querySelector("#saveProduct").addEventListener("click", function () {
       product.imageUrl = imageUrl;
       product.price = price;
       product.description = description;
+<<<<<<< HEAD
 
       showAlert("Product updated successfully");
+=======
+>>>>>>> 987c3c5ffe5e88bc8406ee0965fcdc06a45d4141
     }
 
   } else {
 
+<<<<<<< HEAD
     // ===== ADD PRODUCT =====
+=======
+    // ===== ADD MODE =====
+>>>>>>> 987c3c5ffe5e88bc8406ee0965fcdc06a45d4141
     let newId;
 
     if (storedProducts.length > 0) {
@@ -236,8 +281,11 @@ document.querySelector("#saveProduct").addEventListener("click", function () {
     };
 
     storedProducts.push(newProduct);
+<<<<<<< HEAD
 
     showAlert("Product added successfully");
+=======
+>>>>>>> 987c3c5ffe5e88bc8406ee0965fcdc06a45d4141
   }
 
   localStorage.setItem("Products", JSON.stringify(storedProducts));
@@ -245,7 +293,11 @@ document.querySelector("#saveProduct").addEventListener("click", function () {
 
   editingProductId = null;
   document.querySelector("form").reset();
+<<<<<<< HEAD
   document.querySelector("#addProductLabel").innerText = "Add Product";
+=======
+  document.querySelector("#exampleModalLabel").innerText = "Add Product";
+>>>>>>> 987c3c5ffe5e88bc8406ee0965fcdc06a45d4141
 
   const modal = bootstrap.Modal.getInstance(
     document.getElementById("form-modal")
@@ -254,6 +306,7 @@ document.querySelector("#saveProduct").addEventListener("click", function () {
 });
 
 
+<<<<<<< HEAD
 
 
 
@@ -264,6 +317,11 @@ document.querySelector("#saveProduct").addEventListener("click", function () {
 // 
 // RESET MODAL WHEN CLOSED
 // 
+=======
+// ============================================
+// RESET MODAL WHEN CLOSED
+// ============================================
+>>>>>>> 987c3c5ffe5e88bc8406ee0965fcdc06a45d4141
 const modalElement = document.getElementById("form-modal");
 
 modalElement.addEventListener("hidden.bs.modal", function () {
@@ -273,9 +331,15 @@ modalElement.addEventListener("hidden.bs.modal", function () {
 });
 
 
+<<<<<<< HEAD
 // 
 // DELETE PRODUCT
 // 
+=======
+// ============================================
+// DELETE PRODUCT
+// ============================================
+>>>>>>> 987c3c5ffe5e88bc8406ee0965fcdc06a45d4141
 document
   .querySelector("#table-data tbody")
   .addEventListener("click", function (e) {
@@ -285,7 +349,11 @@ document
 
     const id = parseInt(deleteBtn.dataset.id);
 
+<<<<<<< HEAD
     // ---------- CONFIRMATION ----------
+=======
+    // ---------- CONFIRM BEFORE DELETE ----------
+>>>>>>> 987c3c5ffe5e88bc8406ee0965fcdc06a45d4141
     const confirmDelete = confirm("Are you sure you want to delete this product?");
     if (!confirmDelete) return;
 
@@ -300,6 +368,7 @@ document
 
     localStorage.setItem("Products", JSON.stringify(storedProducts));
     renderProducts();
+<<<<<<< HEAD
     showAlert("Product deleted successfully 🗑️","error");
   });
 
@@ -307,6 +376,14 @@ document
 // 
 // SEARCHING PRODUCTS
 // 
+=======
+  });
+
+
+// ============================================
+// SEARCHING PRODUCTS
+// ============================================
+>>>>>>> 987c3c5ffe5e88bc8406ee0965fcdc06a45d4141
 document.querySelector("#searchProduct")
   .addEventListener("input", function () {
 
@@ -335,9 +412,15 @@ document.querySelector("#searchProduct")
   });
 
 
+<<<<<<< HEAD
 // 
 // SORTING PRODUCTS
 // 
+=======
+// ============================================
+// SORTING PRODUCTS
+// ============================================
+>>>>>>> 987c3c5ffe5e88bc8406ee0965fcdc06a45d4141
 document.querySelector("#sortSelect")
   .addEventListener("change", function () {
 
@@ -368,6 +451,7 @@ document.querySelector("#sortSelect")
     }
 
     if (sortType === "price-asc") {
+<<<<<<< HEAD
       // sortedProducts = products.toSorted(
       //   (a, b) =>
       //     parseFloat(a.price.replace("$", "")) -
@@ -387,6 +471,21 @@ document.querySelector("#sortSelect")
       // );
       sortedProducts = products.toSorted((a, b) => b.price - a.price)
 
+=======
+      sortedProducts = products.toSorted(
+        (a, b) =>
+          parseFloat(a.price.replace("$", "")) -
+          parseFloat(b.price.replace("$", ""))
+      );
+    }
+
+    if (sortType === "price-desc") {
+      sortedProducts = products.toSorted(
+        (a, b) =>
+          parseFloat(b.price.replace("$", "")) -
+          parseFloat(a.price.replace("$", ""))
+      );
+>>>>>>> 987c3c5ffe5e88bc8406ee0965fcdc06a45d4141
     }
 
     const tableBody = document.querySelector("#table-data tbody");
@@ -413,6 +512,7 @@ document.querySelector("#sortSelect")
 
       tableBody.appendChild(row);
     });
+<<<<<<< HEAD
   });
 
 
@@ -438,3 +538,6 @@ function showAlert(message, type = "success") {
     alertBox.classList.remove("show");
   }, 2000);
 }
+=======
+});
+>>>>>>> 987c3c5ffe5e88bc8406ee0965fcdc06a45d4141
